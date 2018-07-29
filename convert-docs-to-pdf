@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+set -o errexit; set -o nounset; set -o pipefail
+
+: ${OUTPUT_DIR:="out"}
+
+
+function main {
+    echo "Creating output dir ${OUTPUT_DIR} if it doesn't already exist..."
+    mkdir -p "${OUTPUT_DIR}"
+
+    for f in *.md; do
+        local filename_without_dir=$(basename "${f}")
+        local filename_without_extension=${filename_without_dir//.md}
+        local tex_filename="${OUTPUT_DIR}/${filename_without_extension}.tex"
+        local pdf_filename="${OUTPUT_DIR}/${filename_without_extension}.pdf"
+
+        echo "Converting file ${f} => ${pdf_filename}..."
+
+        docker-compose run pandoc /bin/sh -c "
+            pandoc --standalone \
+                --template styles/style.tex \
+                --from markdown --to context \
+                --variable papersize=A4 \
+                --output ${tex_filename} \
+            && context --result=${pdf_filename} \
+        "
+    done
+}
+
+main 
