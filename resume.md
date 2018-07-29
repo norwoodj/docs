@@ -1,83 +1,105 @@
 John Norwood
 ============
 
--------------------              ----------------------------
-1131 1/2 Poquito Street Unit B   norwood.john.m@gmail.com
-Austin, Texas 78702              (512) 521 4257
--------------------              ----------------------------
+----------------------------    ------------------------
+1131.5 Poquito Street Unit B    (512) 521 4257
+Austin, Texas 78702             norwood.john.m@gmail.com
+----------------------------    ------------------------
+
+
+Summary
+-------
+Driven Senior Software Engineer with 4 years of experience. Developed high-performance
+CRM batch and real-time stream-processing applications responsible for sending upwards
+of 5 million personalized emails and 1 million push notifcations daily. Developed tools
+and standards that drastically improved developer ergonomics and the reliability of the
+software delivery pipeline across the entire engineering organization.
+
 
 Education
 ---------
-
 2010-2014
-:   **BSE, Computer Science**; University of Michigan, Ann Arbor
+: BSE, Computer Science; University of Michigan, Ann Arbor
+
 
 Experience
 ----------
+2014 - Present
+: Senior Software Engineer - [Retailmenot](https://www.retailmenot.com/corp)
 
-**Your Most Recent Work Experience:**
+* Geofence Push Pipeline
+    * Server-side approach to delivering push notifications to users as they enter configured geofences
+    * _GeofenceEnter_ and _GeofenceExit_ events were consumed from a [Kinesis](https://aws.amazon.com/kinesis/)
+      stream and notifications were delivered via [Urban Airship](https://www.urbanairship.com/)
+    * Implemented a number of performance improvements that increased our event-processing throughput
+      from around 400 events/second to 1600+.
 
-Short text containing the type of work done, results obtained,
-lessons learned and other remarks. Can also include lists and
-links:
+* Ordering Service Replatform 
+    * Replatformed the three services responsible for ordering coupons on store pages from puppet-managed
+      infrastructure to a dockerized ECS/Elasticbeanstalk architecture
+    * Reduced the time required to increase/decrease system capacity from hours to seconds.
+    * Dockerized project tools and local-run process, reducing project setup time from days to minutes.
 
-* First item
+* SRE Tools
+    * Implemented tools in python to improve and standardize a number of engineering processes
+    * bastion-server-ctl - Tool for creating and tunneling through [bastion servers](https://docs.aws.amazon.com/quickstart/latest/linux-bastion/architecture.html).
+      Also implemented an associated [Terraform](https://www.terraform.io) module to build the necessary
+      AWS resources
+    * publish-eb-bundle - Tool for creating an [Application Source Bundle](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/applications-sourcebundle.html) 
+      from a mix of local and remote files. This removed the need to copy common ebextensions into every
+      Elastic Beanstalk application in the company, reducing the number of copies of these files from
+      dozens to one.
 
-* Item with [link](http://www.example.com). Links will work both in
-  the html and pdf versions.
 
-**That Other Job You Had**
+Other Projects
+--------------
+[Raspberry Pi Salt](https://github.com/norwoodj/rpi-salt)
+:   [salt](https://saltstack.com/) configuration for standing up a [Kubernetes](https://kubernetes.io/) Cluster
+    on [Raspberry Pis](https://www.raspberrypi.org/).
 
-Also with a short description.
+[Hashbash](https://github.com/norwoodj/stupidchess)
+:   A Java 8/Spring Boot/MySQL API and React frontend for generating and searching [Rainbow Tables](https://en.wikipedia.org/wiki/Rainbow_table)
 
-Technical Experience
---------------------
+    * Generated a table of 20 million 10,000-hash chains which resulted in 11 million unique endpoints and achieved
+      a hash-reversal rate of 37% on passwords consisting of 8 characters from the set \[a-z\]
+    * Deployed on Kubernetes running on Raspberry Pis configured using the _Raspberry Pi Salt_ project above
 
-My Cool Side Project
-:   For items which don't have a clear time ordering, a definition
-    list can be used to have named items.
+[jconfigure](https://github.com/norwoodj/jconfigure)
+:   A python application configuration loading library
 
-    * These items can also contain lists, but you need to mind the
-      indentation levels in the markdown source.
-    * Second item.
+    * Merges configuration from environment-variable specified sets of directories and filenames
+    * Implements a number of custom yaml tags for accessing environment variables, formatting strings,
+      and more in config files
 
-Open Source
-:   List open source contributions here, perhaps placing emphasis on
-    the project names, for example the **Linux Kernel**, where you
-    implemented multithreading over a long weekend, or **node.js**
-    (with [link](http://nodejs.org)) which was actually totally
-    your idea...
+[Stupidchess](https://github.com/norwoodj/stupidchess)
+:   A python/flask/mongo API and React frontend for playing chess, checkers, and the self-invented stupidchess
 
-Programming Languages
-:   **first-lang:** Here, we have an itemization, where we only want
-    to add descriptions to the first few items, but still want to
-    mention some others together at the end. A format that works well
-    here is a description list where the first few items have their
-    first word emphasized, and the last item contains the final few
-    emphasized terms. Notice the reasonably nice page break in the pdf
-    version, which wouldn't happen if we generated the pdf via html.
+    * Application configured locally and in deployed environments using the _jconfigure_ library above
+    * Deployed on Kubernetes running on Raspberry Pis configured using the _Raspberry Pi Salt_ project above
 
-:   **second-lang:** Description of your experience with second-lang,
-    perhaps again including a [link] [ref], this time placing the url
-    reference elsewhere in the document to reduce clutter (see source
-    file). 
 
-:   **obscure-but-impressive-lang:** We both know this one's pushing
-    it.
+Technical Skills
+----------------
+Languages
+:   Expert - C, C++, Java, Javascript (es5 and es6), Python
+:   Proficient - Clojure, Golang, PHP
 
-:   Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
+Other Technologies
+:   Container Orchestration
 
-[ref]: https://github.com/githubuser/superlongprojectname
+    * Expert - Kubernetes, Elastic Container Service
+    * Proficient - Docker Swarm
 
-Extra Section, Call it Whatever You Want
-----------------------------------------
+:   Infrastructure As Code
 
-* Human Languages:
+    *  Expert - Cloudformation, Terraform
 
-     * English (native speaker)
-     * ???
-     * This is what a nested list looks like.
+:   Config Management
 
-* Random tidbit
+    * Expert - Salt-Stack
+    * Proficient - Ansible, Puppet
 
-* Other sort of impressive-sounding thing you did
+:   IaaS
+
+    * Expert - Amazon Web Services
+    * Proficient - Google Cloud Platform
