@@ -1,18 +1,14 @@
 #!/usr/bin/env bash
 set -o errexit; set -o nounset; set -o pipefail
 
+: ${DOCUMENTS_DIR:="docs"}
 : ${OUTPUT_DIR:="out"}
 
 
 function main {
     mkdir -p "${OUTPUT_DIR}"
 
-    for f in *.md; do
-        if [[ "${f}" == README.md ]]; then
-            echo "Skipping file README.md"
-            continue
-        fi
-
+    for f in "${DOCUMENTS_DIR}"/*.md; do
         local filename_without_dir=$(basename "${f}")
         local filename_without_extension=${filename_without_dir//.md}
         local tex_filename="${OUTPUT_DIR}/${filename_without_extension}.tex"
