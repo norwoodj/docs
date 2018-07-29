@@ -16,15 +16,16 @@ function main {
 
         echo "Converting file ${f} => ${pdf_filename}..."
 
-        docker-compose run pandoc /bin/sh -c "
+        docker-compose run --entrypoint sh pandoc -c "
             pandoc --standalone \
                 --template styles/style.tex \
                 --from markdown --to context \
                 --variable papersize=A4 \
                 --output ${tex_filename} \
-            && context --result=${pdf_filename} \
+                ${f} \
+            && context --result=${pdf_filename}
         "
     done
 }
 
-main 
+main "${@}"
