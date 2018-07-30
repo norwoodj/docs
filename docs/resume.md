@@ -25,20 +25,18 @@ Education
 Experience
 ----------
 2014 - Present
-: Senior Software Engineer - [Retailmenot](https://www.retailmenot.com/corp)
+:   Senior Software Engineer - [Retailmenot](https://www.retailmenot.com/corp)
 
 * Geofence Push Pipeline
     * Server-side approach to delivering push notifications to users as they enter configured geofences
-    * _GeofenceEnter_ and _GeofenceExit_ events were consumed from a [Kinesis](https://aws.amazon.com/kinesis/)
-      stream and notifications were delivered via [Urban Airship](https://www.urbanairship.com/)
+    * Events were consumed from a [Kinesis](https://aws.amazon.com/kinesis/) stream
     * Implemented a number of performance improvements that increased our event-processing throughput
       from around 400 events/second to 1600+.
 
 * Ordering Service Replatform 
-    * Replatformed the three services responsible for ordering coupons on store pages from puppet-managed
-      infrastructure to a dockerized ECS/Elasticbeanstalk architecture
-    * Reduced the time required to increase/decrease system capacity from hours to seconds.
-    * Dockerized project tools and local-run process, reducing project setup time from days to minutes.
+    * Replatformed three major services from puppet-managed infrastructure to a dockerized
+      ECS/Elasticbeanstalk architecture
+    * Reduced the time required to increase/decrease deployed system capacity from hours to seconds.
 
 * SRE Tools
     * Implemented tools in python to improve and standardize a number of engineering processes
@@ -57,7 +55,7 @@ Other Projects
 :   [salt](https://saltstack.com/) configuration for standing up a [Kubernetes](https://kubernetes.io/) Cluster
     on [Raspberry Pis](https://www.raspberrypi.org/).
 
-[Hashbash](https://github.com/norwoodj/stupidchess)
+[Hashbash](https://github.com/norwoodj/hashbash)
 :   A Java 8/Spring Boot/MySQL API and React frontend for generating and searching [Rainbow Tables](https://en.wikipedia.org/wiki/Rainbow_table)
 
     * Generated a table of 20 million 10,000-hash chains which resulted in 11 million unique endpoints and achieved
