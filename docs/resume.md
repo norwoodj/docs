@@ -105,3 +105,6 @@ Other Technologies
 
     * Expert - Amazon Web Services
     * Proficient - Google Cloud Platform
+
+----------------------------------------------
+Generated from [Resume v18.0804](https://github.com/norwoodj/docs/blob/18.0804/docs/resume.md)
