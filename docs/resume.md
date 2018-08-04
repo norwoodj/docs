@@ -24,12 +24,16 @@ Education
 
 Experience
 ----------
-2014 - Present
-:   Senior Software Engineer - [Retailmenot](https://www.retailmenot.com/corp)
+Aug 2014 - Present
+:   [Retailmenot](https://www.retailmenot.com/corp)
+
+    * Aug 2014 - Feb 2016 Software Engineer 1
+    * Feb 2016 - Feb 2018 Software Engineer 2
+    * Feb 2018 - Present  Senior Software Engineer
 
 * Geofence Push Pipeline
     * Server-side approach to delivering push notifications to users as they enter configured geofences
-    * Events were consumed from a [Kinesis](https://aws.amazon.com/kinesis/) stream
+    * Designed a framework for A/B testing custom rate-limiting and content selection rules and evaluating lift/decline in open-rates
     * Implemented a number of performance improvements that increased our event-processing throughput
       from around 400 events/second to 1600+.
 
@@ -39,14 +43,14 @@ Experience
     * Reduced the time required to increase/decrease deployed system capacity from hours to seconds.
 
 * SRE Tools
-    * Implemented tools in python to improve and standardize a number of engineering processes
+    * Implemented ~10 tools in python to improve and standardize a number of build/deploy/production support processes
     * bastion-server-ctl - Tool for creating and tunneling through [bastion servers](https://docs.aws.amazon.com/quickstart/latest/linux-bastion/architecture.html).
-      Also implemented an associated [Terraform](https://www.terraform.io) module to build the necessary
-      AWS resources
+      Also implemented an associated [Terraform](https://www.terraform.io) module to build the necessary AWS resources
     * publish-eb-bundle - Tool for creating an [Application Source Bundle](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/applications-sourcebundle.html) 
       from a mix of local and remote files. This removed the need to copy common ebextensions into every
       Elastic Beanstalk application in the company, reducing the number of copies of these files from
       dozens to one.
+    * At present these tools are used by ~5 other engineering teams in ~10 projects
 
 
 Other Projects
