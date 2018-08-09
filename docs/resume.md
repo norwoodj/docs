@@ -83,7 +83,7 @@ Other Projects
 Technical Skills
 ----------------
 Languages
-:   Expert - C, C++, Java, Javascript (es5 and es6), Python
+:   Expert - Java, Python, C, C++, Javascript (es5 and es6)
 :   Proficient - Clojure, Golang, PHP
 
 Other Technologies
@@ -107,4 +107,4 @@ Other Technologies
     * Proficient - Google Cloud Platform
 
 ----------------------------------------------
-Generated from [Resume v18.0804](https://github.com/norwoodj/docs/blob/18.0804/docs/resume.md)
+Generated from [Resume v18.0809](https://github.com/norwoodj/docs/blob/18.0809/docs/resume.md)
