@@ -3,10 +3,12 @@ set -o errexit; set -o nounset; set -o pipefail
 
 : ${DOCUMENTS_DIR:="docs"}
 : ${OUTPUT_DIR:="out"}
+: ${VERSION_PLACEHOLDER:="VERSION"}
 
 
 function main {
     mkdir -p "${OUTPUT_DIR}"
+    local version=$(cat version.txt)
 
     for f in "${DOCUMENTS_DIR}"/*.md; do
         local filename_without_dir=$(basename "${f}")
@@ -15,6 +17,7 @@ function main {
         local pdf_filename="${OUTPUT_DIR}/${filename_without_extension}.pdf"
 
         echo "Converting file ${f} -> ${pdf_filename}..."
+        sed -i "" "s|${VERSION_PLACEHOLDER}|${version}|g" "${f}"
 
         docker-compose run --entrypoint sh pandoc -c "
             pandoc --standalone \
@@ -27,6 +30,8 @@ function main {
                 ${tex_filename} \
                 2>&1 >> context.log
         "
+
+        sed -i "" "s|${version}|${VERSION_PLACEHOLDER}|g" "${f}"
     done
 }
 
