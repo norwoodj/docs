@@ -10,8 +10,7 @@ PHONE_NUMBER
 
 Summary
 -------
-Software Engineer with 8 years of experience in network engineering, data engineering, full-stack web development,
-and site reliability engineering. Areas of expertise include:
+Software Engineer with 8 years of experience. Areas of expertise include:
 
 * Network Engineering - Implemented network proxies at [OSI](https://en.wikipedia.org/wiki/OSI_model) layers 3, 4, and 7,
   including TLS interception, traffic inspection and policy enforcement on HTTP(s) and Layer 4 traffic, and proxying
@@ -50,11 +49,11 @@ September 2019 - Present
 
 * Intel Team
     * Implemented an async batch data processing and job tracking library in python in the spirit of [Spring Batch](https://spring.io/projects/spring-batch)
+      and ~100 batch jobs using the library
     * Implemented terraform configuration to deploy [CloudSQL](https://cloud.google.com/sql) databases,
       [GKE clusters](https://cloud.google.com/kubernetes-engine), and [PubSub topics](https://cloud.google.com/pubsub/docs/overview) on [Google Cloud Platform](https://cloud.google.com)
     * Implemented [helm](https://helm.sh/) configuration to deploy [Airflow](https://airflow.apache.org/), [Prometheus monitoring](https://prometheus.io/), and
       a variety of other applications on both GKE and internal kubernetes clusters
-    * Implemented ~100 batch jobs using the aforementioned batch data processing library and deployed them on our Airflow instance
 * Gateway Team
     * Implemented new data and control plane functionality for a policy-based L4 and L7 network filtering proxy
     * Contributed to several external teams' systems to implement "static-egress" functionality, whereby customer

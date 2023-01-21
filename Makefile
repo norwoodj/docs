@@ -7,7 +7,7 @@ docs: version.txt
 
 .PHONY: clean
 clean:
-	rm -rvf image version.txt out context.log
+	rm -rvf image version.txt out *.log *.tuc
 
 version.txt: image
 	echo $(shell docker run --rm --entrypoint date $(PANDOC_IMAGE) --utc "+%Y%m%d-%H%M") > version.txt

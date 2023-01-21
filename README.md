@@ -13,8 +13,11 @@ The approach taken to generate these documents is largely inspired by this [page
 The following command will convert all markdown documents in the `docs` folder into PDFs:
 
 ```bash
-$ ./convert-docs-to-pdf
+$ make
 ```
+
+There are a number of placeholder variables that must be set for this command to work, these are used
+to replace values in the documents with sensitive values like my address and phone number.
 
 This will build a docker image called `jnorwood-pandoc:current` and then run a couple of commands
 in a container using this image to convert all of the markdown files first to [ConTeXt](https://en.wikipedia.org/wiki/ConTeXt)
