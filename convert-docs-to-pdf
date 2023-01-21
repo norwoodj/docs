@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+set -o errexit; set -o nounset; set -o pipefail
+
+: ${DOCUMENTS_DIR:="docs"}
+: ${OUTPUT_DIR:="out"}
+
+VERSION_PLACEHOLDER="VERSION"
+PLACEHOLDER_VARS=(
+    "ADDRESS_LINE_1"
+    "ADDRESS_LINE_2"
+    "EMAIL"
+    "PHONE_NUMBER"
+)
+
+function main {
+    mkdir -p "${OUTPUT_DIR}"
+    local version=$(cat version.txt)
+
+    for f in "${DOCUMENTS_DIR}"/*.md; do
+        local filename_without_dir=$(basename "${f}")
+        local filename_without_extension=${filename_without_dir//.md}
+        local source_file="${OUTPUT_DIR}/${filename_without_dir}"
+        cp "${f}" "${source_file}"
+
+        local tex_filename="${OUTPUT_DIR}/${filename_without_extension}.tex"
+        local pdf_filename="${OUTPUT_DIR}/${filename_without_extension}.pdf"
+
+        echo "Converting file ${f} -> ${pdf_filename}..."
+        sed -i "" "s|${VERSION_PLACEHOLDER}|${version}|g" "${source_file}"
+
+        for p in ${PLACEHOLDER_VARS[*]}; do
+            if [[ -z "$${!p:-}" ]]; then
+                echo "Placeholder variable ${p} not set!"
+                exit 1
+            fi
+
+            sed -i "" "s|${p}|${!p}|g" "${source_file}"
+        done
+
+        docker-compose run --entrypoint sh pandoc -c "
+            pandoc --standalone \
+                --template styles/style.tex \
+                --from markdown --to context \
+                --variable papersize=A4 \
+                --output ${tex_filename} \
+                ${source_file} \
+            && context \
+                ${tex_filename} \
+                2>&1 >> context.log \
+            && mv "${filename_without_extension}.pdf" "${pdf_filename}"
+        "
+    done
+}
+
+main "${@}"
