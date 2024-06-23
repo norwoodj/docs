@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+USER_IDS="$(id -u):$(id -g)" docker-compose run generate

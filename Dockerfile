@@ -1,22 +1,23 @@
 FROM debian:bookworm-slim@sha256:4bb1c943c628a90262f46daa36ae815a23d81cfa89d57d1d124bf02580922120
 
-ARG PANDOC_VERSION=2.2.2.1
+ARG CONTEXT_VERSION=2021.03.05.20230120+dfsg-1+deb12u1
+ENV CONTEXT_VERSION=${CONTEXT_VERSION}
+ARG PANDOC_VERSION=2.17.1.1-2~deb12u1
 ENV PANDOC_VERSION=${PANDOC_VERSION}
+ENV TEXMFCACHE=/tmp
 
-RUN apt-get update \
-    && apt-get install -y --force-yes --no-install-recommends \
-        build-essential \
-        context \
-        wget \
+RUN apt update \
+    && apt install -y \
+        context=${CONTEXT_VERSION} \
+        git \
+        pandoc=${PANDOC_VERSION} \
     && rm -rf /var/lib/apt/lists/* \
-    && wget https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-1-amd64.deb \
-    && dpkg -i pandoc-*.deb \
-    && rm pandoc-*.deb \
-    && apt-get remove -y wget \
-    && apt-get autoclean \
-    && apt-get clean
+    && apt autoclean \
+    && apt clean \
+    && mtxrun --generate
 
-WORKDIR /home/root
+WORKDIR /opt/generate
 COPY styles ./styles
+COPY scripts ./scripts
 
-ENTRYPOINT ["pandoc"]
+ENTRYPOINT ["./scripts/convert-docs-to-pdf"]

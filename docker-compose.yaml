@@ -1,10 +1,27 @@
 version: "3.6"
 
 services:
-  pandoc:
-    image: jnorwood/pandoc:current
-    build: {context: .}
+  generate:
+    image: jnorwood/generate
+    build:
+      context: .
+    environment:
+      ADDRESS_LINE_1:
+      ADDRESS_LINE_2:
+      EMAIL:
+      PHONE_NUMBER:
+      USER: ${USER}
+      VERSION:
+    user: ${USER_IDS}
     volumes:
       - type: bind
         source: .
-        target: /home/root
+        target: /opt/generate
+      - type: bind
+        source: /etc/passwd
+        target: /etc/passwd
+        read_only: true
+      - type: bind
+        source: /etc/group
+        target: /etc/group
+        read_only: true
