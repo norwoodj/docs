@@ -1,5 +1,3 @@
-version: "3.6"
-
 services:
   generate:
     image: jnorwood/generate
