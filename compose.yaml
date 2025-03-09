@@ -4,8 +4,7 @@ services:
     build:
       context: .
     environment:
-      ADDRESS_LINE_1:
-      ADDRESS_LINE_2:
+      ADDRESS:
       EMAIL:
       PHONE_NUMBER:
       USER: ${USER}

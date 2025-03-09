@@ -17,8 +17,7 @@ to replace values in the documents with sensitive values like my address and pho
 need to set them when you invoke the command:
 
 ```bash
-ADDRESS_LINE_1="Praça Afonso de Albuquerque" \
-ADDRESS_LINE_2="Lisboa, Portugal 1349-02235" \
+ADDRESS="Lisboa, Portugal" \
 PHONE_NUMBER="+351 123 456 789" \
 EMAIL="marques.pombal@gmail.com" \
     make

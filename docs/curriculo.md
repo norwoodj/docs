@@ -2,10 +2,10 @@ John Norwood
 ============
 
 ----------------------------    ---------------------------
-ADDRESS_LINE_1       https://github.com/norwoodj
-ADDRESS_LINE_2       EMAIL
-PHONE_NUMBER
-----------------------------
+EMAIL                           [LinkedIn](https://www.linkedin.com/in/john-norwood-29266763)
+PHONE_NUMBER                    [Github](https://github.com/norwoodj)
+ADDRESS                         [Personal Website](https://jmn23.com)
+----------------------------    ---------------------------
 
 
 Sumário

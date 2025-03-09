@@ -2,15 +2,15 @@ John Norwood
 ============
 
 ----------------------------    ---------------------------
-ADDRESS_LINE_1                  EMAIL
-ADDRESS_LINE_2                  [Github](https://github.com/norwoodj)
-PHONE_NUMBER                    [Personal Website](https://jmn23.com)
+EMAIL                           [LinkedIn](https://www.linkedin.com/in/john-norwood-29266763)
+PHONE_NUMBER                    [Github](https://github.com/norwoodj)
+ADDRESS                         [Personal Website](https://jmn23.com)
 ----------------------------    ---------------------------
 
 
 Summary
 -------
-Experienced software engineer with 10 years of experience building, deploying, and supporting production
+Experienced software engineer with over 10 years of experience building, deploying, and supporting production
 applications for a wide array of problem spaces using myriad technologies and deployment platforms. Areas
 of expertise include:
 
@@ -37,15 +37,25 @@ Databases
 :   PostgreSQL, Redis, ClickHouse, MySQL, MongoDB
 
 Devops Tools
-:   Docker, Kubernetes, Terraform, Gitlab, Systemd
+:   Docker, Kubernetes, Prometheus, Terraform, Gitlab, Systemd
 
 Cloud Platforms
 :   Amazon Web Services, Google Cloud Platform
 
 Work Experience
 ---------------
+Oct 2024 - Present
+:   Sabbatical
+
+* Self-directed study of Networking and Data-Processing books
+    * [Understanding Linux Networking Internals](https://www.oreilly.com/library/view/understanding-linux-network/0596002556)
+    * [Learning eBPF](https://www.oreilly.com/library/view/learning-ebpf/9781098135119/Understanding)
+    * [Designing Data-Intensive Applications](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063)
+* European travel, in particular, bike trip across the entirety of Portugal north to south
+* Organized move back to the United States
+
 Sep 2019 - Oct 2024
-:   [Cloudflare](https://www.cloudflare.com/about-overview)
+:   [Cloudflare](https://www.cloudflare.com/about-overview) (Austin, Texas / Lisbon, Portugal)
 
     * Jun 2022 - Oct 2024 | Zero Trust Connectivity Team
     * Jan 2021 - Jun 2022 | Gateway Team
@@ -53,23 +63,22 @@ Sep 2019 - Oct 2024
 
 * Zero Trust Connectivity Team
     * Worked in a team of 4 to build the initial version of a Zero Trust Connectivity Hub service, an L3/L4 proxy implemented
-      in async Rust using the [tokio](https://tokio.rs) async runtime. This replaced a number of existing ad-hoc service integrations
+      in async Rust using [tokio](https://tokio.rs). This replaced a number of existing ad-hoc service integrations
       with a common pattern to enable greater observability and more rapid implementation of future integrations
     * Implemented functionality in Cloudflare's [Oxy framework](https://blog.cloudflare.com/from-ip-packets-to-http-the-many-faces-of-our-oxy-framework)
-      which powers the Connectivity Hub. A noteable feature was L4 to L3 downgrades, enabling TCP or UDP traffic to be inspected by our
-      Secure Web Gateway, and then converted to IP packets to be sent to an L3 offramp, e.g. a [Warp device](https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/warp)
-      or a [Magic WAN tunnel](https://developers.cloudflare.com/magic-wan/reference/tunnels)
-    * Implemented changes to an external team's data plane service and [eBPF](https://ebpf.io) programs to overhaul the
-      mechanism for backhauling [Anycast](https://www.cloudflare.com/learning/cdn/glossary/anycast-network) [GRE](https://en.wikipedia.org/wiki/Generic_Routing_Encapsulation) or [IPsec](https://en.wikipedia.org/wiki/IPsec)
-      tunneled return packets to the individual server where the client who initiated the IP flow is connected
+      which powers the Connectivity Hub and numerous other services at Cloudflare. In particular, L3 <-> L4 translations of TCP and UDP traffic using
+      a [TUN device](https://docs.kernel.org/networking/tuntap.html)
+    * Made changes to a data-plane service which configures linux routing tables, [nftables](https://wiki.nftables.org/wiki-nftables/index.php/Main_Page)
+      rules, and [eBPF](https://ebpf.io) programs to integrate [GRE](https://en.wikipedia.org/wiki/Generic_Routing_Encapsulation) and
+      [IPsec](https://en.wikipedia.org/wiki/IPsec) onramped traffic with the Connectivity Hub
 * Gateway Team
-    * Implemented new data and control plane functionality for our two [Zero Trust](https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust) systems:
+    * Implemented new data and control plane functionality for two Zero Trust systems:
         * Policy-based L4 and L7 [Secure Web Gateway](https://www.cloudflare.com/learning/access-management/what-is-a-secure-web-gateway) built in async
-          Rust using the [tokio](https://tokio.rs/) async runtime
+          Rust using tokio
         * Policy-based DNS resolver written in Rust and [deployed as a web assembly plugin](https://blog.cloudflare.com/big-pineapple-intro) within cloudflare's
           1.1.1.1 resolver
-    * Led cross-team initiative to extend [Dedicated Egress IP](https://developers.cloudflare.com/cloudflare-one/policies/gateway/egress-policies/dedicated-egress-ips)
-      functionality to work for both UDP and IPv6 traffic. Involved migrating the feature to use [soft-unicast IP ranges](https://blog.cloudflare.com/cloudflare-servers-dont-own-ips-anymore),
+    * Led a cross-team initiative to extend [Dedicated Egress IP](https://developers.cloudflare.com/cloudflare-one/policies/gateway/egress-policies/dedicated-egress-ips)
+      functionality to work for both UDP and IPv6 traffic. This involved migrating the feature to use [soft-unicast IP ranges](https://blog.cloudflare.com/cloudflare-servers-dont-own-ips-anymore),
       implementing IPv6 pool assignment and address selection, and designing and implementing a inter-datacenter relay mechanism for UDP traffic which
       has since been reused in numerous other features
 * Intel Team
@@ -84,7 +93,7 @@ Sep 2019 - Oct 2024
       Google Cloud Platform and internal bare-metal environments
 
 2014 - 2019
-:   [Retailmenot](https://www.retailmenot.com/corp)
+:   [Retailmenot](https://www.retailmenot.com/corp) (Austin, Texas)
 
 * CRM Team
     * Implemented automated email send jobs using Java and Spring Batch, combining numerous signals including offer engagement rates,
