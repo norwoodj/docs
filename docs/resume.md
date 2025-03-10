@@ -51,7 +51,7 @@ Oct 2024 - Present
     * [Understanding Linux Networking Internals](https://www.oreilly.com/library/view/understanding-linux-network/0596002556)
     * [Learning eBPF](https://www.oreilly.com/library/view/learning-ebpf/9781098135119/Understanding)
     * [Designing Data-Intensive Applications](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063)
-* European travel, in particular, bike trip across the entirety of Portugal north to south
+* European travel, in particular, a [solo bike trip across the entirety of Portugal north to south](https://medium.com/@norwood.john.m/passeio-de-portugal-a-cycling-adventure-617c86979ab0)
 * Organized move back to the United States
 
 Sep 2019 - Oct 2024
