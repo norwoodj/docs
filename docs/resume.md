@@ -37,7 +37,7 @@ Databases
 :   PostgreSQL, Redis, ClickHouse, MySQL, MongoDB
 
 Devops Tools
-:   Docker, Kubernetes, Prometheus, Terraform, Gitlab, Systemd
+:   Docker, Kubernetes, Prometheus, Terraform, Gitlab, Systemd, Salt
 
 Cloud Platforms
 :   Amazon Web Services, Google Cloud Platform
@@ -51,7 +51,7 @@ Oct 2024 - Present
     * [Understanding Linux Networking Internals](https://www.oreilly.com/library/view/understanding-linux-network/0596002556)
     * [Learning eBPF](https://www.oreilly.com/library/view/learning-ebpf/9781098135119/Understanding)
     * [Designing Data-Intensive Applications](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063)
-* European travel, in particular, a [solo bike trip across the entirety of Portugal north to south](https://medium.com/@norwood.john.m/passeio-de-portugal-a-cycling-adventure-617c86979ab0)
+* European travel, in particular, a [solo bike trip across Portugal](https://medium.com/@norwood.john.m/passeio-de-portugal-a-cycling-adventure-617c86979ab0)
 * Organized move back to the United States
 
 Sep 2019 - Oct 2024
@@ -112,20 +112,11 @@ Sep 2019 - Oct 2024
 [Personal Projects](https://github.com/norwoodj)
 -----------------
 [helm-docs](https://github.com/norwoodj/helm-docs)
-:   An automatic Markdown documentation generator for helm charts with over 1300 stars
+:   An automatic Markdown documentation generator for helm charts with over 1500 stars
 
 [bastion-pod-ctl](https://github.com/norwoodj/bastion-pod-ctl)
 :   CLI tool written in Go for proxying TCP and SSH traffic into a private network via a [pod](https://kubernetes.io/docs/concepts/workloads/pods/) created on a kubernetes
     worker node in that private network
-
-stupidchess
-:   [Python flask-based web application](https://github.com/norwoodj/stupidchess-backend) and [react frontend](https://github.com/norwoodj/stupidchess-frontend)
-    implementing a web-based single and multi-player board-game with login and persistence implemented using MongoDB
-    as a datastore
-
-[bolas](https://github.com/norwoodj/bolas)
-:   Simple physics simulator of bouncing balls implemented as an unnecessarily complicated WebSocket client/server
-    model with a Rust [Actix Web](https://actix.rs/) backend and a [vanilla js](http://vanilla-js.com/) frontend
 
 hashbash
 :   Web-based [Rainbow Table](https://en.wikipedia.org/wiki/Rainbow_table) generator and searcher implemented in both [Go](https://github.com/norwoodj/hashbash-backend-go) and
