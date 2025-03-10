@@ -118,7 +118,7 @@ Sep 2019 - Oct 2024
 :   CLI tool written in Go for proxying TCP and SSH traffic into a private network via a [pod](https://kubernetes.io/docs/concepts/workloads/pods/) created on a kubernetes
     worker node in that private network
 
-hashbash
+[hashbash](https://github.com/norwoodj/hashbash-backend-go)
 :   Web-based [Rainbow Table](https://en.wikipedia.org/wiki/Rainbow_table) generator and searcher implemented in both [Go](https://github.com/norwoodj/hashbash-backend-go) and
     [Java](https://github.com/norwoodj/hashbash-backend-java) with a [react frontend](https://github.com/norwoodj/hashbash-frontend). Wrote a
     [blog post](https://medium.com/@norwood.john.m/hashbash-a-comparison-of-cpu-and-io-bound-applications-in-go-and-java-across-multiple-metrics-d358df6e03b1)
