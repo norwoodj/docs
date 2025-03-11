@@ -49,7 +49,7 @@ Oct 2024 - Present
 
 * Self-directed study of Networking and Data-Processing books
     * [Understanding Linux Networking Internals](https://www.oreilly.com/library/view/understanding-linux-network/0596002556)
-    * [Learning eBPF](https://www.oreilly.com/library/view/learning-ebpf/9781098135119/Understanding)
+    * [Learning eBPF](https://www.oreilly.com/library/view/learning-ebpf/9781098135119)
     * [Designing Data-Intensive Applications](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063)
 * European travel, in particular, a [solo bike trip across Portugal](https://medium.com/@norwood.john.m/passeio-de-portugal-a-cycling-adventure-617c86979ab0)
 * Organized move back to the United States
