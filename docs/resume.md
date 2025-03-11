@@ -55,7 +55,7 @@ Oct 2024 - Present
 * Organized move back to the United States
 
 Sep 2019 - Oct 2024
-:   [Cloudflare](https://www.cloudflare.com/about-overview) (Austin, Texas / Lisbon, Portugal)
+:   [Cloudflare](https://www.cloudflare.com/about-overview) (Austin, Texas / Lisbon, Portugal) - Senior Systems Engineer
 
     * Jun 2022 - Oct 2024 | Zero Trust Connectivity Team
     * Jan 2021 - Jun 2022 | Gateway Team
@@ -68,8 +68,8 @@ Sep 2019 - Oct 2024
     * Implemented functionality in Cloudflare's [Oxy framework](https://blog.cloudflare.com/from-ip-packets-to-http-the-many-faces-of-our-oxy-framework)
       which powers the Connectivity Hub and numerous other services at Cloudflare. In particular, L3 <-> L4 translations of TCP and UDP traffic using
       a [TUN device](https://docs.kernel.org/networking/tuntap.html)
-    * Made changes to a data-plane service which configures linux routing tables, [nftables](https://wiki.nftables.org/wiki-nftables/index.php/Main_Page)
-      rules, and [eBPF](https://ebpf.io) programs to integrate [GRE](https://en.wikipedia.org/wiki/Generic_Routing_Encapsulation) and
+    * Redesigned portions of a data-plane service which configures linux routing tables, [nftables](https://wiki.nftables.org/wiki-nftables/index.php/Main_Page)
+      rules, and [eBPF](https://ebpf.io) programs in order to integrate [GRE](https://en.wikipedia.org/wiki/Generic_Routing_Encapsulation) and
       [IPsec](https://en.wikipedia.org/wiki/IPsec) onramped traffic with the Connectivity Hub
 * Gateway Team
     * Implemented new data and control plane functionality for two Zero Trust systems:
@@ -82,10 +82,10 @@ Sep 2019 - Oct 2024
       implementing IPv6 pool assignment and address selection, and designing and implementing a inter-datacenter relay mechanism for UDP traffic which
       has since been reused in numerous other features
 * Intel Team
-    * Built an async batch data processing and job tracking library in python in the spirit of [Spring Batch](https://spring.io/projects/spring-batch)
+    * Designed an async batch data processing and job tracking library in python in the spirit of [Spring Batch](https://spring.io/projects/spring-batch)
       using [asyncio](https://docs.python.org/3/library/asyncio.html) and [asyncpg](https://magicstack.github.io/asyncpg/current), improving
       the performance of existing batch jobs and development velocity in building new ones
-    * Implemented a number of streaming data processing applications using [Kafka](https://kafka.apache.org/) and [GCP pub/sub](https://cloud.google.com/pubsub),
+    * Built a number of streaming data processing applications using [Kafka](https://kafka.apache.org/) and [GCP pub/sub](https://cloud.google.com/pubsub),
       in particular, one for detecting newly-registered domain names by consuming our [1.1.1.1](https://www.cloudflare.com/learning/dns/what-is-1.1.1.1) resolver logs,
       approximately 200 billion events per day at the time
     * Implemented terraform configuration and [helm](https://helm.sh/) charts to deploy and monitor an [airflow](https://airflow.apache.org/) deployment
@@ -93,7 +93,7 @@ Sep 2019 - Oct 2024
       Google Cloud Platform and internal bare-metal environments
 
 2014 - 2019
-:   [Retailmenot](https://www.retailmenot.com/corp) (Austin, Texas)
+:   [Retailmenot](https://www.retailmenot.com/corp) (Austin, Texas) - Software Engineer I, Software Engineer II, Senior Software Engineer
 
 * CRM Team
     * Implemented automated email send jobs using Java and Spring Batch, combining numerous signals including offer engagement rates,
