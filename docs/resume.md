@@ -1,11 +1,11 @@
 John Norwood
 ============
 
-----------------------------    ---------------------------
-EMAIL                           [LinkedIn](https://www.linkedin.com/in/john-norwood-29266763)
-PHONE_NUMBER                    [Github](https://github.com/norwoodj)
-ADDRESS                         [Personal Website](https://jmn23.com)
-----------------------------    ---------------------------
+----------------------------                           ---------------------------
+<https://www.linkedin.com/in/john-norwood-29266763>    EMAIL
+<https://github.com/norwoodj>                          PHONE_NUMBER
+<https://jmn23.com>                                    ADDRESS     
+----------------------------                           ---------------------------
 
 
 Summary
@@ -112,7 +112,8 @@ Sep 2019 - Oct 2024
 [Personal Projects](https://github.com/norwoodj)
 -----------------
 [helm-docs](https://github.com/norwoodj/helm-docs)
-:   An automatic Markdown documentation generator for helm charts with over 1500 stars
+:   An automatic Markdown documentation generator for helm charts with over 1500 stars on github,  1 million image pulles from Docker Hub,
+    and in use by dozens of organizations
 
 [bastion-pod-ctl](https://github.com/norwoodj/bastion-pod-ctl)
 :   CLI tool written in Go for proxying TCP and SSH traffic into a private network via a [pod](https://kubernetes.io/docs/concepts/workloads/pods/) created on a kubernetes
