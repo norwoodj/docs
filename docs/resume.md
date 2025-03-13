@@ -11,8 +11,8 @@ John Norwood
 Summary
 -------
 Experienced software engineer with over 10 years of experience building, deploying, and supporting production
-applications as well as designing and leading implementation of large multi-team initiatives with both
-internal and external stakeholders. Areas of expertise include:
+applications as well as leading large multi-team initiatives with both internal and external stakeholders.
+Areas of expertise include:
 
 * Network Engineering
 * Data Engineering
@@ -52,21 +52,21 @@ Sep 2019 - Oct 2024
     * Sep 2019 - Jan 2021 | Intel Team
 
 * Zero Trust Connectivity Team
-    * Worked in a team of 4 to design and build the initial version of a Connectivity Hub service, an L3/L4 proxy implemented
+    * Worked in a team of four to design and build the initial version of a Connectivity Hub service, an L3/L4 proxy implemented
       in async rust. This replaced a number of existing ad-hoc service integrations with a common pattern enabling greater
       observability and code reuse, saving dozens of developer hours per week on debugging effort and new feature development.
     * Interfaced directly with customers to debug problems spanning multiple systems within the Zero Trust ecosystem. Introduced
-      observability improvements for these systems to solve existing issues and ultimately reduce time needed to diagnose and
-      fix other bugs by over 75%.
-    * Developed numerous IP features in Cloudflare's [Oxy framework](https://blog.cloudflare.com/from-ip-packets-to-http-the-many-faces-of-our-oxy-framework)
-      which powers the Connectivity Hub and numerous other services at Cloudflare. These features were instrumental in both
+      observability improvements to solve existing issues and ultimately reduce time needed to diagnose and fix other bugs by
+      over 75%.
+    * Developed substantial functionality for IP traffic in Cloudflare's [Oxy framework](https://blog.cloudflare.com/from-ip-packets-to-http-the-many-faces-of-our-oxy-framework)
+      which powers the Connectivity Hub and numerous other services at Cloudflare. These extensions were instrumental in both
       deprecating our [Wireguard](https://www.wireguard.com/) VPN service in favor of [MASQUE](https://blog.cloudflare.com/zero-trust-warp-with-a-masque/),
       as well as reducing resource usage of another Zero Trust data-plane service by over 90%.
     * Led effort to rearchitect multiple subsystems within an external team's data-plane service that configures linux routing tables,
       [nftables](https://wiki.nftables.org/wiki-nftables/index.php/Main_Page) rules, and [eBPF](https://ebpf.io) programs as
-      part of a multi-quarter initiative to integrate the [Magic WAN](https://www.cloudflare.com/network-services/products/magic-wan)
-      product suite with the Connectivity Hub. This work extended coverage of existing and planned future Zero Trust features to
-      these products, reduced customer onboarding time by over 90%, reduced debugging time for customer issues within these products
+      part of a multi-quarter undertaking to integrate the [Magic WAN](https://www.cloudflare.com/network-services/products/magic-wan)
+      product suite with the Connectivity Hub. This work extended coverage of existing and planned-future Zero Trust features to
+      these products, reduced customer onboarding time by over 90%, decreased debugging time for customer issues within these products
       by over 75%, and enabled deprecation of large portions of multiple legacy codebases.
 * Gateway Team
     * Implemented new data and control-plane functionality for two Zero Trust systems:
@@ -75,24 +75,23 @@ Sep 2019 - Oct 2024
         * Policy-based DNS resolver written in rust and [deployed as a web assembly plugin](https://blog.cloudflare.com/big-pineapple-intro) within cloudflare's
           1.1.1.1 resolver.
     * Spearheaded a cross-team initiative to extend [Dedicated Egress IP](https://developers.cloudflare.com/cloudflare-one/policies/gateway/egress-policies/dedicated-egress-ips)
-      functionality to work for both UDP and IPv6 traffic. The primary effort was leading a cross-functional design and
-      implementation effort for a connection-oriented inter-datacenter datagram relay mechanism which improved throughput of
-      an existing but insufficient mechanism by over 50%, and which has since been reused to implement features including
-      location-accurate IP selection for internet-bound UDP Zero Trust traffic, [ICMP over tunnels](https://blog.cloudflare.com/the-most-exciting-ping-release),
-      and more.
+      functionality to both UDP and IPv6 traffic. Led the design and implementation effort for a connection-oriented inter-datacenter
+      datagram relay mechanism for the feature which improved throughput of an existing but insufficient mechanism by over 50% and which
+      has since been reused to implement numerous other improvements including location-accurate IP selection for internet-bound UDP
+      traffic and [ICMP over tunnels](https://blog.cloudflare.com/the-most-exciting-ping-release).
 * Intel Team
-    * Designed an async batch data processing and job tracking library in python reducing runtime of existing batch jobs by
-      multiple orders of magnitude and creating a common pattern, which enabled the team of four engineers to implement
-      dozens of other jobs in a fraction of the time it had previously taken
+    * Designed an async batch data processing and job tracking library in python reducing runtime of existing ETL jobs by
+      multiple orders of magnitude and creating a common pattern, enabling the team of four engineers to implement
+      dozens of other jobs in a fraction of the time it had previously taken.
     * Built a number of streaming data processing applications in go using [Kafka](https://kafka.apache.org/) and [GCP pub/sub](https://cloud.google.com/pubsub),
       in particular, one for detecting newly-registered domain names from [1.1.1.1](https://www.cloudflare.com/learning/dns/what-is-1.1.1.1) resolver logs,
-      approximately 200 billion events per day at the time
+      approximately 200 billion events per day at the time.
 
 2014 - 2019
 :   [Retailmenot](https://www.retailmenot.com/corp) (Austin, Texas) - Software Engineer I, Software Engineer II, Senior Software Engineer
 
 * CRM Team
-    * Implemented batch jobs using Java and Spring Batch to deliver millions of personalized emails and push notifications per day.
+    * Implemented ETL jobs using Java and Spring Batch to deliver millions of personalized emails and push notifications per day.
     * Developed a [Kinesis](https://aws.amazon.com/kinesis) consumer to process the tens of millions of daily [Geo-fence](https://en.wikipedia.org/wiki/Geo-fence) enter
       and exit analytic events published by mobile app users in order to deliver on-demand push notifications for nearby stores.
 * Site Reliability Engineering Team
