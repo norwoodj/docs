@@ -17,6 +17,7 @@ Areas of expertise include:
 * Network Engineering
 * Data Engineering
 * DevOps/Site Reliability Engineering
+* High Performance API design (both REST and gRPC)
 
 Technical Skills
 ----------------
