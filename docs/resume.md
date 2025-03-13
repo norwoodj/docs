@@ -34,16 +34,6 @@ Cloud Platforms
 
 Work Experience
 ---------------
-Oct 2024 - Present
-:   Sabbatical
-
-* Self-directed study of Networking and Data-Processing books
-    * [Understanding Linux Networking Internals](https://www.oreilly.com/library/view/understanding-linux-network/0596002556)
-    * [Learning eBPF](https://www.oreilly.com/library/view/learning-ebpf/9781098135119)
-    * [Designing Data-Intensive Applications](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063)
-* European travel, in particular, a [solo bike trip across Portugal](https://medium.com/@norwood.john.m/passeio-de-portugal-a-cycling-adventure-617c86979ab0)
-* Organized move back to the United States
-
 Sep 2019 - Oct 2024
 :   [Cloudflare](https://www.cloudflare.com/about-overview) (Austin, Texas / Lisbon, Portugal) - Senior Systems Engineer
 
@@ -59,8 +49,8 @@ Sep 2019 - Oct 2024
       observability improvements to solve existing issues and ultimately reduce time needed to diagnose and fix other bugs by
       over 75%.
     * Developed substantial functionality for IP traffic in Cloudflare's [Oxy framework](https://blog.cloudflare.com/from-ip-packets-to-http-the-many-faces-of-our-oxy-framework)
-      which powers the Connectivity Hub and numerous other services at Cloudflare. These extensions were instrumental in both
-      deprecating our [Wireguard](https://www.wireguard.com/) VPN service in favor of [MASQUE](https://blog.cloudflare.com/zero-trust-warp-with-a-masque/),
+      which powers the Connectivity Hub and numerous other services. These extensions were instrumental in deprecating our
+      [Wireguard](https://www.wireguard.com/) VPN service in favor of [MASQUE](https://blog.cloudflare.com/zero-trust-warp-with-a-masque/),
       as well as reducing resource usage of another Zero Trust data-plane service by over 90%.
     * Led effort to rearchitect multiple subsystems within an external team's data-plane service that configures linux routing tables,
       [nftables](https://wiki.nftables.org/wiki-nftables/index.php/Main_Page) rules, and [eBPF](https://ebpf.io) programs as
@@ -92,21 +82,21 @@ Sep 2019 - Oct 2024
 
 * CRM Team
     * Implemented ETL jobs using Java and Spring Batch to deliver millions of personalized emails and push notifications per day.
-    * Developed a [Kinesis](https://aws.amazon.com/kinesis) consumer to process the tens of millions of daily [Geo-fence](https://en.wikipedia.org/wiki/Geo-fence) enter
+    * Developed a [Kinesis](https://aws.amazon.com/kinesis) consumer to process tens of millions of daily [Geo-fence](https://en.wikipedia.org/wiki/Geo-fence) enter
       and exit analytic events published by mobile app users in order to deliver on-demand push notifications for nearby stores.
 * Site Reliability Engineering Team
-    * Architected and launched a multi-tenant kubernetes platform as a service for internal teams with common patterns
+    * Architected and launched a multi-tenant kubernetes platform as a service on AWS for internal teams with common patterns
       for monitoring, alerting, TLS, logging, and autoscaling, reducing time needed to deploy a new service by over 90%.
 
 
 [Personal Projects](https://github.com/norwoodj)
 -----------------
 [helm-docs](https://github.com/norwoodj/helm-docs)
-:   An automatic Markdown documentation generator for helm charts with over 1500 stars on github, 1 million image pulls from Docker Hub,
+:   An automatic markdown documentation generator for helm charts with over 1500 stars on github, 1 million image pulls from Docker Hub,
     and in use by dozens of organizations
 
 [bastion-pod-ctl](https://github.com/norwoodj/bastion-pod-ctl)
-:   CLI tool written in go for proxying TCP and SSH traffic into a private network via a [pod](https://kubernetes.io/docs/concepts/workloads/pods/) created on a kubernetes
+:   CLI tool written in go for proxying TCP traffic into a private network via a [pod](https://kubernetes.io/docs/concepts/workloads/pods/) created on a kubernetes
     worker node in that private network
 
 [hashbash](https://github.com/norwoodj/hashbash-backend-go)
