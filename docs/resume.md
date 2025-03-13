@@ -44,7 +44,7 @@ Sep 2019 - Oct 2024
 * Zero Trust Connectivity Team
     * Worked in a team of four to design and build the initial version of a Connectivity Hub service, an L3/L4 proxy implemented
       in async rust. This replaced a number of existing ad-hoc service integrations with a common pattern enabling greater
-      observability and code reuse, saving dozens of developer hours per week on debugging effort and new feature development.
+      observability and code reuse, saving dozens of developer hours per week on debugging and new feature development.
     * Interfaced directly with customers to debug problems spanning multiple systems within the Zero Trust ecosystem. Introduced
       observability improvements to solve existing issues and ultimately reduce time needed to diagnose and fix other bugs by
       over 75%.
@@ -76,6 +76,9 @@ Sep 2019 - Oct 2024
     * Built a number of streaming data processing applications in go using [Kafka](https://kafka.apache.org/) and [GCP pub/sub](https://cloud.google.com/pubsub),
       in particular, one for detecting newly-registered domain names from [1.1.1.1](https://www.cloudflare.com/learning/dns/what-is-1.1.1.1) resolver logs,
       approximately 200 billion events per day at the time.
+    * Authored terraform configuration and [helm](https://helm.sh/) charts to deploy and monitor an [airflow](https://airflow.apache.org) deployment
+      and all other necessary infrastructure for running the team's ~100 batch jobs and streaming data applications on a mix of
+      Google Cloud Platform and internal bare-metal environments
 
 2014 - 2019
 :   [Retailmenot](https://www.retailmenot.com/corp) (Austin, Texas) - Software Engineer I, Software Engineer II, Senior Software Engineer
@@ -92,8 +95,8 @@ Sep 2019 - Oct 2024
 [Personal Projects](https://github.com/norwoodj)
 -----------------
 [helm-docs](https://github.com/norwoodj/helm-docs)
-:   An automatic markdown documentation generator for helm charts with over 1500 stars on github, 1 million image pulls from Docker Hub,
-    and in use by dozens of organizations
+:   An automatic markdown documentation generator for helm charts with over 1500 stars on github, more than 1 million image pulls from
+    Docker Hub, and in use by dozens of organizations
 
 [bastion-pod-ctl](https://github.com/norwoodj/bastion-pod-ctl)
 :   CLI tool written in go for proxying TCP traffic into a private network via a [pod](https://kubernetes.io/docs/concepts/workloads/pods/) created on a kubernetes
