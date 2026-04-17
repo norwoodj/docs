@@ -46,10 +46,10 @@ May 2025 - Present
     * May 2025 - Present | Light Weight Infrastructure (LWI) Data Plane Team
 
 * Designed and built the container/VM orchestration data plane node agent for the LWI platform in async Rust.
-* Implemented an IPv6-only multi-node overlay network for firecracker VMs using [macvlan](https://developers.redhat.com/articles/2026/04/03/introduction-to-linux-interfaces-for-virtual-networking#macvlan)
+* Implemented an IPv6-only L2 overlay network for firecracker VMs using [macvlan](https://developers.redhat.com/articles/2026/04/03/introduction-to-linux-interfaces-for-virtual-networking#macvlan)
   and [tap](https://docs.kernel.org/networking/tuntap.html) devices and NDP proxying.
 * Designed and led teams of junior engineers to implement various LWI platform features including Service Discovery, DNS64/NAT64 for
-  egress to IPv4 networks, telemetry/log collection, and a docker-compose-based control and data Plane integration testing
+  egress to IPv4 networks, telemetry/log collection, and a docker-compose-based control and data plane integration testing
   framework for CI/CD.
 * Ran experiments to determine the feasibility of and strategy for long-term LWI platform initiatives including container/VM suspend/resume
   (using [native firecracker features](https://github.com/firecracker-microvm/firecracker/blob/main/docs/snapshotting/snapshot-support.md),
@@ -92,7 +92,7 @@ Sep 2019 - Oct 2024
 [Personal Projects](https://github.com/norwoodj)
 -----------------
 [helm-docs](https://github.com/norwoodj/helm-docs)
-:   An automatic markdown documentation generator for Helm charts with over 1500 stars on Github, more than 1 million image pulls from
+:   An automatic markdown documentation generator for Helm charts with over 1700 stars on Github, more than 1 million image pulls from
     Docker Hub, and in use by dozens of organizations.
 
 Education
